@@ -3,7 +3,7 @@ import { InferGetStaticPropsType } from 'next';
 import getAllProducts from '@/framework/shopify/product/getAllProducts';
 
 const Home = ({ products }: InferGetStaticPropsType<typeof getStaticProps>) => {
-	return <div>{products}</div>;
+	return <div>{JSON.stringify(products)}</div>;
 };
 
 export default Home;
