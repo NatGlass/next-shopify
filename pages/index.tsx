@@ -2,7 +2,7 @@ import React from 'react';
 import { InferGetStaticPropsType } from 'next';
 
 const Home = ({ products }: InferGetStaticPropsType<typeof getStaticProps>) => {
-	return <div>Home</div>;
+	return <div>{products}</div>;
 };
 
 export default Home;
